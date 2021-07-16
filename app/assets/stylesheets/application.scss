@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
+
+$primary-color-dark: #689f38;
+$primary-color: #1da1f2;
+$primary-color-light: #dcedc8;
+$primary-color-text: #212121;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.username-label,
+.Fullname-label {
+  background-color: #f5f8fa;
+  width: 40%;
+  padding-right: 35%;
+  margin-bottom: 0;
+  color: #7c7786;
+}
+
+.username-input,
+.Fullname-input {
+  width: 40%;
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  background-color: #e8f0fe;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-cover {
+  margin-top: 2%;
+  i {
+    color: $primary-color;
+  }
+  h3 {
+    font-weight: bolder;
+  }
+}
+
+.login-form {
+  padding-top: 1rem;
+}
+
+.login-btn,
+.signup-btn {
+  width: 40%;
+  border-radius: 0.5rem;
+  background-color: $primary-color;
+  padding: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
