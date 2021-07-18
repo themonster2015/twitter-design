@@ -2,20 +2,20 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by(username: params[:session][:username].downcase)
+    user = User.find_by(Username: params[:session][:Username].downcase)
     if user
       session[:user_id] = user.id
-      flash[:success] = 'You have successfully logged in'
-      redirect_to user_path(user)
+      flash[:notice] = 'You have successfully logged in'
+      redirect_to root_path(user)
     else
-      flash.now[:danger] = 'Your login information is not correct.'
+      flash.now[:alert] = 'Your login information is not correct.'
       render 'new'
     end
   end
 
   def destroy
     session[:user_id] = nil
-    flash[:success] = 'You have logged out'
+    flash[:notice] = 'You have logged out'
     redirect_to root_path
   end
 end

@@ -1,0 +1,51 @@
+<div class="main-content">
+ <%= render 'side_nav' %>
+ <main>
+  <%= render 'navigation_bar' %>
+  <div class="main-body">
+    <div class="tweets">
+      <p class="tweets-heading">TWEETS</p>
+      <div class="tweet-form">
+        <p>TWEET SOMETHING</p>
+        <%= form_for @opinion, url: new_opinion_path  do |f| %>
+          <%= f.text_area :text, class: "text-input", placeholder: "Compose new tweet" %>
+            <% if @opinion.errors[:text][0]  %>
+              <p class="error">* <%= @opinion.errors[:text][0] %></p>
+            <% end %>
+          <%= f.submit "Tweet", class: "text-btn" %>
+        <% end %>
+      </div>
+      <div class="tweet-body">
+        <p class="tweet-body-header">NEW TWEETS</p>
+        <% @opinions.each do |opinion| %>
+          <div class="tweet-avatar">
+            <div class="picture">
+              <img src="https://via.placeholder.com/50" alt="">           
+            </div>
+          </div>
+          <div class="tweet-content">
+            <h4><%= opinion.Author.Fullname %></h4>
+            <span><%= opinion.text %></span>
+          </div>
+          <div class="clear"></div>
+        <% end %>
+      </div>
+    </div>
+    <aside class="who-follow">
+      <div class="follow-header">
+        <p>WHO TO FOLLOW</p>
+      </div>
+      <div class="find-friends">
+        <% @users.each do |user| %>
+          <div class="who-follow-profile">
+              <img src="https://via.placeholder.com/50" alt="">
+              <%= link_to user_path(user), class: 'user' do %>
+                <h6><%= user.Fullname %></h6>
+              <% end %>          
+          </div>
+        <% end %>
+      </div>
+    </aside>
+  </div> 
+ </main>
+</div>
