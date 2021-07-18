@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:notice] = "Welcome to Twitter #{@user.Username}"
+      flash[:notice] = "Welcome to Twitter #{@user.Username}. Please log in now!"
       redirect_to root_path
     else
       render 'new'
