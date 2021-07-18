@@ -12,7 +12,7 @@ class OpinionsController < ApplicationController
     @opinion.AuthorId = current_user.id
 
     if @opinion.save
-      flash[:notice] = "Tweet added."
+      flash[:notice] = 'Tweet added.'
       redirect_to root_path
     else
       flash[:alert] = "Couldn't create your tweet. Please try again!"
