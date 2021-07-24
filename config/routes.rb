@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resources :users, except: [:new]
   get '/follow/:followed_id', to: 'followings#create', as: :follow
   delete '/:followed_id', to: 'followings#destroy', as: :unfollow
+  get '/like/:opinion_id', to: 'likes#create', as: :like
+  delete '/unlike/:opinion_id', to: 'likes#destroy', as: :unlike
 end
