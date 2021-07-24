@@ -28,6 +28,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 
+gem 'carrierwave'
+gem 'cloudinary'
+gem 'figaro'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
