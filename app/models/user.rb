@@ -10,6 +10,11 @@ class User < ApplicationRecord
   mount_uploader :Photo, ImageUploader
   mount_uploader :CoverImage, ImageUploader
 
+
+  def self.all_users(user_id)
+    User.where('id != ?', user_id)
+  end
+
   def self.user_followers(id, curr_user_id)
     Following.where(Followedid: id).where.not(Followerid: curr_user_id).order(created_at: :desc).limit(5)
   end
