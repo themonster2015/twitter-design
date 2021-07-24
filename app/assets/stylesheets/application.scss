@@ -18,14 +18,15 @@ body {
   padding: 0;
 }
 
-.hero-img img {
-  width: 100%;
-  height: 30rem;
-}
-
 li {
   list-style: none;
 }
+
+.hero-img img {
+  width: 100%;
+  height: 35rem;
+}
+// Login/signup section
 
 .login-cover {
   margin-top: 2%;
@@ -42,7 +43,9 @@ li {
 }
 
 .username-label,
-.Fullname-label {
+.Fullname-label,
+.cover-image-label,
+.Photo-label {
   background-color: #f5f8fa;
   width: 40%;
   padding-right: 35%;
@@ -57,7 +60,13 @@ li {
   border-bottom: 1px solid $primary-color;
   background-color: #e8f0fe;
   height: 5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cover-image-input,
+.Photo-input {
+  margin-left: 30%;
+  margin-bottom: 1rem;
 }
 
 .login-btn,
@@ -226,7 +235,7 @@ main {
   }
 
   .tweet-content h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: -0.2rem;
   }
 
@@ -246,8 +255,15 @@ aside {
   }
 
   .who-follow-profile {
-    display: flex;
     margin-bottom: 1rem;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .photo {
+    border-radius: 50%;
   }
 
   .who-follow-profile h6 {
@@ -283,7 +299,7 @@ aside {
   }
 
   .user-content h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: -0.1rem;
   }
 
@@ -296,12 +312,18 @@ aside {
   border-left: 2px solid #e7ebee;
 
   .follow-icon {
-    text-align: center;
-    margin-top: 3rem;
+    // text-align: center;
+    margin: 3rem 0 0 4rem;
+    display: flex;
   }
 
   .follow-icon img {
     padding: 0 2rem;
+    border-radius: 50%;
+  }
+
+  .fa-list {
+    padding-top: 0.3rem;
   }
 
   .user-stat {
@@ -357,6 +379,7 @@ aside {
 
   .follower-avatar img {
     margin-right: 1rem;
+    border-radius: 50%;
   }
 
   .follow-icons {
