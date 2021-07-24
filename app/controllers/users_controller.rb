@@ -15,13 +15,13 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @opinions = @user.opinions.order("created_at DESC")
+    @opinions = @user.opinions.order('created_at DESC')
     @followers = User.user_followers(params[:id], current_user.id)
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:Fullname, :Username,:Photo, :CoverImage)
+    params.require(:user).permit(:Fullname, :Username, :Photo, :CoverImage)
   end
 end
