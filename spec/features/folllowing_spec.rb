@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Folllowings", type: :feature do
+RSpec.feature 'Folllowings', type: :feature do
   before :each do
     @user = User.create(Fullname: 'Tester1', Username: 'Tester1')
     @user = User.create(Fullname: 'Tester2', Username: 'Tester2')
@@ -10,7 +10,7 @@ RSpec.feature "Folllowings", type: :feature do
     fill_in 'Username', with: 'Tester1'
     click_button 'Log In'
     click_on 'Tester2'
-    first(:css, ".follow-button").click
+    first(:css, '.follow-button').click
     expect(page).to have_content('HOME')
   end
 
@@ -19,8 +19,8 @@ RSpec.feature "Folllowings", type: :feature do
     fill_in 'Username', with: 'Tester1'
     click_button 'Log In'
     click_on 'Tester2'
-    first(:css, ".follow-button").click
-    first(:css, ".unfollow-button").click
+    first(:css, '.follow-button').click
+    first(:css, '.unfollow-button').click
     expect(page).to have_content('HOME')
   end
 end

@@ -34,11 +34,11 @@
             <span><%= opinion.text %></span>
             <span class="like">
               <% if opinion.likes.any? { |like| like.UserId == current_user.id }%>
-                <%= link_to unlike_path(opinion), method: :delete, class: 'user' do %>
+                <%= link_to unlike_path(opinion), method: :delete, class: 'user unlike' do %>
                   <i class="fas fa-heart text-danger"></i>
                 <% end %>
               <% else %>
-                <%= link_to like_path(opinion), class: 'user' do %>
+                <%= link_to like_path(opinion), class: 'user like-1' do %>
                   <i class="fas fa-heart text-white"></i>
                 <% end %>
               <% end %>

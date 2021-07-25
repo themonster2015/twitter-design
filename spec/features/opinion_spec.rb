@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Opinions", type: :feature do
+RSpec.feature 'Opinions', type: :feature do
   before :each do
     @user = User.create(Fullname: 'Tester1', Username: 'Tester1')
     Opinion.create(AuthorId: @user.id, text: 'my first tweet')
