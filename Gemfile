@@ -54,11 +54,11 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
-  gem 'rspec-rails'
-  gem 'launchy'
   gem 'database_cleaner'
+  gem 'launchy'
+  gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 4.3'
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

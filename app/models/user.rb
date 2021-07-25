@@ -10,7 +10,6 @@ class User < ApplicationRecord
   mount_uploader :Photo, ImageUploader
   mount_uploader :CoverImage, ImageUploader
 
-
   def self.all_users(user_id)
     User.where('id != ?', user_id)
   end
