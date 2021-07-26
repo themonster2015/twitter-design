@@ -35,11 +35,11 @@
 
 ### Homepage
 
-![screenshot](welcome.PNG)
+![screenshot](./welcome.PNG)
 
 ### Userpage
 
-![screenshot](home.PNG)
+![screenshot](./home.PNG)
 
 ## Built With
 
