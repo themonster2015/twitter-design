@@ -116,8 +116,3 @@ Contributions are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project! It's free.
-
-## Acknowledgments
-
-Design idea by [Gregoire Vella](https://www.behance.net/gregoirevella).
-{"mode":"full","isActive":false}
