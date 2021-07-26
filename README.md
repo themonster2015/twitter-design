@@ -2,29 +2,6 @@
 
 > In this project, I created a similar design to that of `twitter.com`, a popular micro-blogging platform. The mocking design has basic functionalities that mimic those of the real site.
 
-# Project Specification
-
-1. The user logs in to the app, only by typing the username (a proper authenticated login is **not** a requirement).
-2. The user is presented with the homepage (see the _Homepage_ screenshot above) that includes:
-   1. Left-side menu (includes only links to pages that are implemented).
-   2. _Tweets_ tab in the centre (skip _Photos_ and _Videos_ for this MVP).
-   3. Right-side section with *Who to follow (*skip _Trending for_ this MVP).
-3. The _Tweets_ section includes:
-   1. Simple form for creating a tweet.
-   2. List of all tweets (sorted by most recent) that display tweet text and author details.
-4. The _Who to follow_ section includes:
-   1. List of profiles that are not followed by the logged-in user (ordered by most recently added).
-5. When the user opens the profile page (see the _Userpage_ screenshot above), they can see:
-   1. Left-side menu (includes only links to pages that are implemented).
-   2. Cover picture and _Tweets_ tab in the centre (skip other tabs and _Tweet to user_ form).
-   3. Right-side section with _Profile detailed info._
-6. The _Profile detailed info_ section includes:
-   1. User photo.
-   2. Button to follow a user.
-   3. Stats: total number of tweets, number of followers and number of following users.
-   4. List of people who follow this user.
-7. At the end extend your MVP app with one simple feature of your choice.
-
 ## Live Demo
 
 [Heroku App Link](http://shrouded-bastion-11104.herokuapp.com/)
