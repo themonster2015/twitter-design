@@ -40,7 +40,18 @@ N+1 problem solution:
 ### Usage
 
 - Fork/Clone this project to your local machine
-- Navigate to the local folder of the forked project and run these lines of code in the console:
+
+```
+    git clone https://github.com/themonster2015/twitter-design.git
+```
+
+- Navigate to the local folder of the forked project:
+
+```
+    cd twitter-design
+```
+
+and run these lines of code in the console:
 
 Install neccesary gems with:
 
@@ -51,6 +62,7 @@ Install neccesary gems with:
 Set up database with:
 
 ```Ruby
+    rails db:create
    rails db:migrate
 ```
 
