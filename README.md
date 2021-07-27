@@ -10,6 +10,10 @@
 
 (https://www.loom.com/share/740a8bc4be7640cda97a8cb20fff9b49)
 
+N+1 problem solution:
+
+(https://www.loom.com/share/83a85306982f425c90a272dfc955d84c)
+
 ### Homepage
 
 ![screenshot](welcome.png?raw=true)
