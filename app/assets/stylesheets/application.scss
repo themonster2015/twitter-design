@@ -27,7 +27,7 @@ li {
 }
 
 .like p {
-  padding: 0rem 0 0 0.5rem;
+  padding: 0 0 0 0.5rem;
 }
 
 .text-white {
@@ -42,9 +42,11 @@ li {
 
 .login-cover {
   margin-top: 2%;
+
   i {
     color: $primary-color;
   }
+
   h3 {
     font-weight: bolder;
   }
@@ -112,18 +114,48 @@ main {
     display: flex;
     padding-right: 3rem;
   }
+
   li {
     padding: 1.5rem;
   }
+
   i {
     color: #63758b;
   }
 }
+
 .main-content {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-gap: 0;
   height: 100vh;
+}
+
+aside {
+  border-left: 2px solid #e7ebee;
+  padding-left: 2rem;
+
+  .follow-header {
+    padding: 1rem 0 0.5rem 0;
+    border-bottom: 2px solid #e7ebee;
+    margin-bottom: 1rem;
+  }
+
+  .who-follow-profile {
+    margin-bottom: 1rem;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .photo {
+    border-radius: 50%;
+  }
+
+  .who-follow-profile h6 {
+    padding-left: 1rem;
+  }
 }
 
 .side-nav {
@@ -204,10 +236,12 @@ main {
   grid-template-columns: 75% 25%;
   grid-gap: 0;
   height: 100vh;
+
   .tweets-heading {
     padding: 1rem 0 1.5rem 0;
     border-bottom: 2px solid #e7ebee;
   }
+
   .tweet-form {
     background-color: white;
     border-radius: 0.5rem;
@@ -257,33 +291,6 @@ main {
 
   .clear {
     clear: both;
-  }
-}
-
-aside {
-  border-left: 2px solid #e7ebee;
-  padding-left: 2rem;
-
-  .follow-header {
-    padding: 1rem 0 0.5rem 0;
-    border-bottom: 2px solid #e7ebee;
-    margin-bottom: 1rem;
-  }
-
-  .who-follow-profile {
-    margin-bottom: 1rem;
-  }
-
-  .user {
-    display: flex;
-  }
-
-  .photo {
-    border-radius: 50%;
-  }
-
-  .who-follow-profile h6 {
-    padding-left: 1rem;
   }
 }
 
