@@ -12,11 +12,11 @@
 
 ### Homepage
 
-![screenshot](welcome.PNG?raw=true)
+![screenshot](welcome.png?raw=true)
 
 ### Userpage
 
-![screenshot](home.PNG?raw=true)
+![screenshot](home.png?raw=true)
 
 ## Built With
 
