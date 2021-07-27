@@ -1,24 +1,111 @@
-# README
+# Twitter Redesign
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> In this project, I created a similar design to that of `twitter.com`, a popular micro-blogging platform. The mocking design has basic functionalities that mimic those of the real site.
 
-Things you may want to cover:
+## Live Demo
 
-* Ruby version
+[Heroku App Link](http://shrouded-bastion-11104.herokuapp.com/)
 
-* System dependencies
+## Video presentation
 
-* Configuration
+(https://www.loom.com/share/740a8bc4be7640cda97a8cb20fff9b49)
 
-* Database creation
+N+1 problem solution:
 
-* Database initialization
+(https://www.loom.com/share/83a85306982f425c90a272dfc955d84c)
 
-* How to run the test suite
+### Homepage
 
-* Services (job queues, cache servers, search engines, etc.)
+![screenshot](welcome.png?raw=true)
 
-* Deployment instructions
+### Userpage
 
-* ...
+![screenshot](home.png?raw=true)
+
+## Built With
+
+- Ruby v2.7.0
+- Ruby on Rails v6.0.2
+- Bootstrap
+- PostgreSQL
+- RSPEC
+
+### Prerequisites
+
+- Ruby: 2.6.5
+- Rails: 6.0.3
+- Postgres: >=9.5
+- Git
+
+### Usage
+
+- Fork/Clone this project to your local machine
+
+```
+    git clone https://github.com/themonster2015/twitter-design.git
+```
+
+- Navigate to the local folder of the forked project:
+
+```
+    cd twitter-design
+```
+
+and run these lines of code in the console:
+
+Install neccesary gems with:
+
+```Ruby
+    bundle install
+```
+
+Set up database with:
+
+```Ruby
+    rails db:create
+   rails db:migrate
+```
+
+Set up cloudinary:
+
+- Goto `cloudinary.com` create an account and get your cloudinary credentials through the "Set Up Your SDK" option.
+- Add the credentials to the `config/application.yml` like this :
+
+```
+cloud_name: "YOUR_CLOUDINARY_NAME"
+API_KEY: "YOUR_CLOUDINARY_API_KEY"
+API_SECRET: "YOUR_CLOUDINARY_API_SECRET"
+```
+
+- Add `config/application.yml` file to your .gitignore file to avoid it being added to your public Github repository.
+  Start server with:
+
+```Ruby
+    rails server
+```
+
+Then open a web page and go to [port 3000 on your local machine.](http://localhost:3000)
+
+### Running tests
+
+```Ruby
+    rspec
+```
+
+### Deployment
+
+The application was deployed on heroku.
+
+## Authors
+
+👤 **Vo thi Quynh Yen**
+
+- Github: [@themonster2015](https://github.com/themonster2015)
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project! It's free.
